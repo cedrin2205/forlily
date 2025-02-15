@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Quotes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        background: #ffe6e6;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 800px;
+        margin: auto;
+      }
+      .flashcard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 100%;
+      }
+      .flashcard:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .flashcard img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      .quote {
+        flex: 1;
+        padding: 0 20px;
+        font-size: 18px;
+        font-family: "Dancing Script", cursive;
+        color: #ff6b81;
+      }
+      .back-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ff6b81;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .back-btn:hover {
+        background-color: #e05270;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Valentine's, Lily ❤️</h1>
+    <div class="container">
+      <div class="flashcard">
+        <p class="quote">"You are my today and all of my tomorrows."</p>
+        <img src="love1.jpg" alt="Love Image 1" />
+      </div>
+      <div class="flashcard">
+        <img src="love2.jpg" alt="Love Image 2" />
+        <p class="quote">
+          "Every love story is beautiful, but ours is my favorite."
+        </p>
+      </div>
+      <div class="flashcard">
+        <p class="quote">
+          "In your smile, I see something more beautiful than the stars."
+        </p>
+        <img src="love3.jpg" alt="Love Image 3" />
+      </div>
+      <div class="flashcard">
+        <img src="love4.jpg" alt="Love Image 4" />
+        <p class="quote">
+          "I love you, not only for what you are, but for what I am when I am
+          with you."
+        </p>
+      </div>
+    </div>
+    <button class="back-btn" onclick="location.href='index.html'">
+      Back to Home
+    </button>
+  </body>
+</html>

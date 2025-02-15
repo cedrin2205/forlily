@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Special Moments</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: row; /* Arrange sections side by side */
+        height: 100vh;
+        width: 100vw;
+        font-family: "Poppins", sans-serif; /* Cute rounded font */
+      }
+      .section {
+        flex: 1; /* Each section takes equal space */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 26px;
+        font-weight: 600;
+        position: relative;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .love {
+        background-color: #ffadc6;
+      } /* Softer pastel colors */
+      .memories {
+        background-color: #ffcc99;
+      }
+      .apology {
+        background-color: #a4c8ff;
+      }
+      .photos {
+        background-color: #a2e0c1;
+      }
+
+      .section img {
+        width: 110px; /* Slightly larger for emphasis */
+        height: 120px;
+        object-fit: contain;
+        margin-bottom: 20px; /* Space between image and button */
+        border-radius: 15px; /* Softer rounded edges */
+      }
+
+      .section button {
+        position: absolute;
+        bottom: 40px;
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #555;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-family: "Caveat", cursive;
+        font-size: 22px;
+        font-weight: 600;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      .section button:hover {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section love">
+      <img src="love.png" alt="Love Letter" />
+      Love Letter
+      <button onclick="location.href='love-letter.html'">Read</button>
+    </div>
+    <div class="section memories">
+      <img src="memories.png" alt="Memories" />
+      Memories
+      <button onclick="location.href='memories.html'">View</button>
+    </div>
+    <div class="section apology">
+      <img src="apology.png" alt="Apology Letter" />
+      Apology Letter
+      <button onclick="location.href='apology-letter.html'">Read</button>
+    </div>
+    <div class="section photos">
+      <img src="photos.png" alt="Our Photos" />
+      Happy Valentine's po ulit lily
+      <button onclick="location.href='valentines.html'">See</button>
+    </div>
+  </body>
+</html>
